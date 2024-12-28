@@ -3,16 +3,20 @@ pipelines {
 
   stages {
     stage ('Building'){
-      echo "Building"
+      steps {
+        echo "Starting nodejs build"
+        
+      }
     }
 
     stage ("Testing'){
-
-    echo "Testing"
+           steps {
+            echo "Testing the build"
+           }
     }
 
            stage ("Final cleanup"){
-             echo "Cleaning"
+             steps {echo "Cleaning build"}
            }
   }
   
