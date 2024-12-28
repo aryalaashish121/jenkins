@@ -14,7 +14,7 @@ pipeline{
 
         stage("Checkout from SCM..."){
             steps {
-                git branch: "master",  url:"https://github.com/dmancloud/complete-prodcution-e2e-pipeline.git"
+                git branch: "main",  url:"https://github.com/aryalaashish121/jenkins.git"
             }
         }
 
